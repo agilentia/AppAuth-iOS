@@ -55,14 +55,14 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic pop
 }
 
-- (instancetype)init {
+- (null_unspecified instancetype)init {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wnonnull"
   return [self initWithPresentingViewController:nil];
 #pragma clang diagnostic pop
 }
 
-- (instancetype)initWithPresentingViewController:
+- (nullable instancetype)initWithPresentingViewController:
     (UIViewController *)presentingViewController {
   self = [super init];
   if (self) {
